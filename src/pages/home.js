@@ -8,7 +8,7 @@ import Results from "../components/results";
 
 const Home = () => {
   return (
-    <div>
+    <div class="container">
       <Hero/>
       <Header/>
       <MainSearch/>
