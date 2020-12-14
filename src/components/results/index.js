@@ -3,8 +3,7 @@ import "./style.css";
 
 function Results() {  
     return (
-      <div>
-        </div>
+      <div class="results"></div>
     );
   }
   

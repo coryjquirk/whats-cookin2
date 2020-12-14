@@ -3,8 +3,9 @@ import "./style.css";
 
 function Footer() {  
     return (
-      <div>
-        </div>
+      <footer id="findGrocery">
+            NEED GROCERIES? <button>CLICK HERE!</button>
+      </footer>
     );
   }
   

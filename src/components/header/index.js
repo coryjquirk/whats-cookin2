@@ -3,8 +3,9 @@ import "./style.css";
 
 function Header() {  
     return (
-      <div>
-        </div>
+      <div class="header">
+            <h1>What's Cooking?</h1>
+      </div>
     );
   }
   
