@@ -108,7 +108,6 @@ $("#searchBtn").click(function () {
 
 });
 
-
 $(document).on('click', '.abtn', function (event) {
   --btncount
   $(this).remove()
@@ -117,8 +116,6 @@ $(document).on('click', '.abtn', function (event) {
 
   }
 });
-
-
 
 function getCoordintes() {
   var options = {
