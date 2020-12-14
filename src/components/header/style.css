@@ -1,0 +1,5 @@
+.header {
+    grid-area: 1/ 1 / 1/ 4;
+    text-align: center;
+    z-index: 0;
+}

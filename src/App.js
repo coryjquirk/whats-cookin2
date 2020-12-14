@@ -1,3 +1,17 @@
+import Home from "./pages/home";
+import React, {Component} from "react";
+import $ from "jquery";
+
+function App() {
+  return (
+    <div className="App">
+      <Home/>
+    </div>
+  );
+}
+
+export default App;
+
 function searchIngred(foodItem) {
   $(".results").empty();
   var queryURL = "https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=%22'" + foodItem + "'%22&app_id=3fde57c1&app_key=98ad8b6a80e961abf27f43122cbe422d"
@@ -108,7 +122,6 @@ $("#searchBtn").click(function () {
 
 });
 
-
 $(document).on('click', '.abtn', function (event) {
   --btncount
   $(this).remove()
@@ -118,9 +131,7 @@ $(document).on('click', '.abtn', function (event) {
   }
 });
 
-
-
-function getCoordintes() {
+function getCoordinates() {
   var options = {
       enableHighAccuracy: true,
       timeout: 5000,
@@ -173,10 +184,9 @@ function getCity(coordinates) {
 }
 
 $("#findGrocery").click(function () {
-  getCoordintes()
+  getCoordinates()
 });
 
 function getGrocery(latitude, longitude) {
   window.open("https://www.google.com/maps/search/grocery+stores/@" + latitude + "," + longitude + ",12z/data=!4m4!2m3!5m1!2e1!6e6", '_blank')
-
 }

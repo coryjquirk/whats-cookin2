@@ -1,0 +1,8 @@
+.hero {
+    grid-area: 1/ 1 / 1/ 4;
+    background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .6;
+}

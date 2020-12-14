@@ -1,0 +1,17 @@
+#searchBar {
+  width: 60%;
+}
+.main-search {
+  grid-area: 2/2/2/3;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  padding: 5px;
+}
+.ingredient1 {
+  display: inline;
+}
+
+.ingredient2 {
+  display: inline;
+}
