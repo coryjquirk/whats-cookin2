@@ -106,7 +106,7 @@ function MainSearch() {
     }
     newBtn.attr("id", "ingredient1");
     newBtn.attr("class", "abtn");
-    newBtn.text(ingredient);
+    newBtn.text(ingredient +  " ⓧ");
     $(".ingredient1").append(newBtn);
     searchIngred(ingredient);
   }

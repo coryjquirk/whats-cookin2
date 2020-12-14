@@ -1,31 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 0;
-  background-color:#ede5cc;
+  background-color: #ede5cc;
 }
 body::after {
   content: "";
-  background-color:#ede5cc;
+  background-color: #ede5cc;
   opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-/* style to break up into components */
-
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,76 +30,10 @@ body::after {
   min-height: 100vh;
   margin-bottom: -50px;
 }
-
 h1 {
   padding-top: 50px;
   padding-bottom: 50px;
-  color:black;
+  color: black;
   font-size: 48px;
 }
-  
-#headerText{
-  z-index:  1;
-  color: black;
-}
 
-.abtn {
-      box-shadow:inset -6px -5px 2px -1px #ffffff;
-      background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-      background-color:#ededed;
-      border-radius:6px;
-      border:1px solid #dcdcdc;
-      display:inline-block;
-      cursor:pointer;
-      color:#777777;
-      font-family:Arial;
-      font-size:16px;
-      font-weight:bold;
-      font-style:italic;
-      padding:5px 20px;
-      text-decoration:none;
-      text-shadow:0px 4px 0px #ffffff;
-  }
-
-  .abtn:hover {
-      background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-      background-color:#dfdfdf;
-  }
-  .abtn:active {
-      position:relative;
-      top:1px;
-  }
-  .ingredButton{
-  margin: 5px;
-  padding: 5px
-  
-}
-
-.thumbnail{
-  grid-column-start: 2;
-  grid-column-end: 2;
-  justify-content: center;
-}
-.recipeTitle{
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-
-.recipeLinks{
-  grid-column-start: 3;
-  grid-column-end: 3;
-}
-
-.thumbnailImg{
-  max-width: 60%;
-}
-
-footer {
-  align-self: end;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  height: 50px;
-  text-align: center;
-  padding: 10px;
-}

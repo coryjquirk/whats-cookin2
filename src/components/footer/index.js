@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import $ from "jquery";
+// https://fontawesome.com/how-to-use/on-the-web/using-with/react
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
-  
   function getCoordinates() {
     var options = {
       enableHighAccuracy: true,
@@ -50,11 +51,9 @@ function Footer() {
       }
     }
   }
-  
   function findGrocery () {
     getCoordinates();
   }
-  
   function getGrocery(latitude, longitude) {
     window.open(
       "https://www.google.com/maps/search/grocery+stores/@" +
@@ -67,7 +66,8 @@ function Footer() {
   }
     return (
       <footer>
-            NEED GROCERIES? <button onClick={findGrocery}>CLICK HERE!</button>
+        <FontAwesomeIcon id="cart" icon={faShoppingCart} alt="cart icon" />
+        NEED GROCERIES? <button onClick={findGrocery}>CLICK HERE!</button>
       </footer>
     );
   }
