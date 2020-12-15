@@ -1,8 +1,23 @@
-.hero {
-    grid-area: 1/ 1 / 1/ 4;
-    background-image: url("https://www.alices.kitchen/wp-content/uploads/Cookware/basil-cook-cooking-691114-1280x640.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#heroImg {
+    display: inline;
     opacity: .6;
+    width: 100%;
+} 
+#hero{
+    position: relative;
+} 
+#title{
+    position: absolute;
+    z-index: 1;
+    bottom:30%;
+    left: 35%;
+}
+@media screen and (max-width: 680px) {
+    #title{
+        position: absolute;
+        z-index: 1;
+        bottom:30%;
+        left: 0px;
+        font-size: 25px;
+    }
 }

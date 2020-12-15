@@ -1,3 +1,9 @@
+.container{
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -22,13 +28,6 @@ body::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  min-height: 100vh;
-  margin-bottom: -50px;
 }
 h1 {
   padding-top: 50px;

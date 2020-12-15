@@ -1,10 +1,6 @@
 .results{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 5px;
+    border: solid 5px green;
 } 
